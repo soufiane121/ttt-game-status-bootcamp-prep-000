@@ -20,7 +20,7 @@ def won?(board)
 end
 
 def full?(board)
-board.all? {|ele| ele =="O" || ele == "X" }
+board.none? {|ele| ele == " " }
 end
 
 def draw?(board)
